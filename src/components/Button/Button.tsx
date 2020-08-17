@@ -10,7 +10,6 @@ const ButtonWrapper = styled.button`
 	outline: none;
 `;
 
-
 export const Button: React.FC = ({ children }) => {
-	return <ButtonWrapper>{children}</ButtonWrapper>
-}
+	return <ButtonWrapper>{children}</ButtonWrapper>;
+};
