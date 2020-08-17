@@ -1,7 +1,4 @@
-{
-	"parser": "babylon",
-	"printWidth": 80,
-	"useTabs": true,
+module.exports = {
 	"tabWidth": 2,
 	"singleQuote": true,
 	"semi": true,
