@@ -20,12 +20,14 @@ $ git init
 You can easily develop and interact with your components by using Storybook. To run the local server, simply run:
 
 ```bash
-$ npm i
+$ npm run setup
 $ npm run storybook
 ```
 
+The setup script will install the dependencies, validate that the tests pass and build the library.
+
 Navigate to [http://localhost:9001](http://localhost:9001) to view your stories. They should automatically update as you develop.
 
-Storybook will pick up any story from the `stories.js` file in a component folder.
+Storybook will pick up any story named `{component}.stories.js` file in a component folder.
 
-Rinse is currently using the latest technology available, so you may need to update your Node versions to latest to accomodate Babel 7 and Webpack 4.
+You may need to update your Node versions to latest to accomodate Babel 7 and Webpack 4.

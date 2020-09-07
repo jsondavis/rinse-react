@@ -1,13 +1,14 @@
 const path = require('path');
+const pkg = require('./package.json');
 
 module.exports = {
 	entry: './src/index.js',
 	module: {
 		rules: [
 			{
-				test: /\.tsx?$/,
+				test: /\.jsx?$/,
 				use: {
-					loader: 'ts-loader',
+					loader: 'babel-loader',
 				},
 			},
 			{
@@ -30,12 +31,21 @@ module.exports = {
 		],
 	},
 	resolve: {
-		extensions: ['.scss', '.ts', '.tsx', '.json', '.png', '.gif', '.jpg', '.svg'],
+		extensions: [
+			'.scss',
+			'.js',
+			'.jsx',
+			'.json',
+			'.png',
+			'.gif',
+			'.jpg',
+			'.svg',
+		],
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist/'),
 		publicPath: '',
-		filename: 'dist.js',
+		filename: `${pkg.name}.js`,
 		libraryTarget: 'umd',
 	},
 };
