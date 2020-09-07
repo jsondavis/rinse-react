@@ -1,10 +1,8 @@
 module.exports = {
-	"tabWidth": 2,
+	"tabWidth": 4,
 	"singleQuote": true,
 	"semi": true,
 	"trailingComma": "es5",
-	"bracketSpacing": true,
-	"jsxBracketSameLine": false,
 	"arrowParens": "always",
 	"overrides": [
 		{
