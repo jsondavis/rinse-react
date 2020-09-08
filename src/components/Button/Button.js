@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.button`
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	border: 0;
+	border-radius: 3em;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 1;
 `;
 
 /**
- * doc blocks are parsed into md to describe the UI component 
+ * doc blocks are parsed into md to describe the UI component
  * want a list?
  *
  * - one
@@ -39,7 +39,7 @@ export const Button = ({ buttonLabel, ...props }) => {
 };
 
 Button.propTypes = {
-    buttonLabel: PropTypes.string.isRequired,
+	buttonLabel: PropTypes.string.isRequired,
 };
 
 export default Button;

@@ -4,3 +4,4 @@ coverage
 .docz
 node_modules
 package-lock.json
+storybook-static
