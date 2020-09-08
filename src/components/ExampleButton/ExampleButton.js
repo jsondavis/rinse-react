@@ -3,14 +3,31 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ButtonWrapper = styled.button`
-	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: 700;
+	background-color: ${(props) => props.theme.backgroundColor};
 	border: 0;
 	border-radius: 3em;
+	color: ${(props) => props.theme.fontColor};
 	cursor: pointer;
 	display: inline-block;
+	font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: 700;
 	line-height: 1;
+	padding: 0.5rem 1rem;
+
+	:hover {
+		background-color: ${(props) => props.theme.backgroundColorHover};
+		color: ${(props) => props.theme.fontColorHover};
+	}
 `;
+
+ButtonWrapper.defaultProps = {
+	theme: {
+		backgroundColor: '#333',
+		backgroundColorHover: '#111',
+		fontColor: '#fefefe',
+		fontColorHover: '#fff',
+	},
+};
 
 /**
  * doc blocks are parsed into md to describe the UI component
@@ -34,12 +51,12 @@ const ButtonWrapper = styled.button`
  *
  * just put a linebreak after any text or the extra MD features won't work
  */
-export const Button = ({ buttonLabel, ...props }) => {
+export const ExampleButton = ({ buttonLabel, ...props }) => {
 	return <ButtonWrapper {...props}>{buttonLabel}</ButtonWrapper>;
 };
 
-Button.propTypes = {
+ExampleButton.propTypes = {
 	buttonLabel: PropTypes.string.isRequired,
 };
 
-export default Button;
+export default ExampleButton;

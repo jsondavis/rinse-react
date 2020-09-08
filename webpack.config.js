@@ -41,6 +41,10 @@ module.exports = {
 			'.jpg',
 			'.svg',
 		],
+		alias: {
+			// allow the pkg name to be used in the pkg itself?
+			[pkg.name]: path.resolve('./src'),
+		},
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist/'),
