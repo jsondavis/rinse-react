@@ -28,4 +28,8 @@ ExampleFeature.propTypes = {
 	buttonList: PropTypes.array.isRequired,
 };
 
+ExampleFeature.defaultProps = {
+	buttonList: [],
+};
+
 export default ExampleFeature;

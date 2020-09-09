@@ -1,16 +1,21 @@
 <p align="center">
-	<img src="https://user-images.githubusercontent.com/10063864/45442352-c961ab80-b68f-11e8-84a3-e920f05a313c.png" width={400} alt="Rinse" />
+	<img src="https://raw.githubusercontent.com/jsondavis/rinse-react/rinse.svg" width={300} alt="Rinse" />
 </p>
 
 > Rinse, React, repeat. A boilerplate to build a React component library.
 
 ## Get Started
 
-To start your own React component library, clone this repository and start your own Git journey!
+To start your own React component library using this as a template, clone this repository a
 
 ```bash
-$ git clone https://github.com/cwlsn/rinse-react cool-name
-$ cd cool-name
+$ git clone https://github.com/jsondavis/rinse-react <app-name>
+$ cd <app-name>
+```
+
+At this point you could opt to keep git history and just alter the remote origin. Another option is to remove the git directory as follows and just reinitialize the repo.
+
+```bash
 $ rm -rf .git
 $ git init
 ```
@@ -21,13 +26,11 @@ You can easily develop and interact with your components by using Storybook. To 
 
 ```bash
 $ npm run setup
-$ npm run storybook
+$ npm run start
 ```
 
 The setup script will install the dependencies, validate that the tests pass and build the library.
 
-Navigate to [http://localhost:9001](http://localhost:9001) to view your stories. They should automatically update as you develop.
+Navigate to [http://localhost:6006](http://localhost:6006) to view your stories. They should automatically update as you develop.
 
-Storybook will pick up any story named `{component}.stories.js` file in a component folder.
-
-You may need to update your Node versions to latest to accomodate Babel 7 and Webpack 4.
+Storybook will pick up any story named `{component}.stories.js` file in any sub directory of src.
