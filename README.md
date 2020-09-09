@@ -1,5 +1,5 @@
 <p align="center">
-	<img src="https://raw.githubusercontent.com/jsondavis/rinse-react/rinse.svg" width={300} alt="Rinse" />
+	<img src="https://raw.githubusercontent.com/jsondavis/rinse-react/master/rinse.svg" width={300} alt="Rinse" />
 </p>
 
 > Rinse, React, repeat. A boilerplate to build a React component library.
